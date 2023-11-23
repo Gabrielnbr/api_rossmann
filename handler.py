@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 from flask              import Flask, request ,Response
 from rossmann.Rossmann  import Rossmann
+import json
 
 # load model
 model = pickle.load( open('model/model_rossmann.pk1', 'rb') )
