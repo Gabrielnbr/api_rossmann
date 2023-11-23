@@ -13,6 +13,7 @@ app = Flask( __name__ )
 @app.route('/rossmann/predict', methods = ['POST'])
 def rossmann_predict():
     test_json = request.get_json()
+    test_json = json.loads(test_json)
     
     if test_json:
         
